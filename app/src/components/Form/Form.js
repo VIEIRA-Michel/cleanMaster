@@ -46,7 +46,7 @@ const Form = () => {
   }
 
   return (
-    <div className="w-[350px] border border-[black] rounded-[10px]">
+    <div className="w-[30%] bg-[white] border border-[black] rounded-[10px] absolute top-[70px] right-[30px]">
       <form
         onSubmit={handleSubmit(submit)}
         className="w-[80%] flex flex-col justify-center items-center m-auto mt-14 mb-5"
@@ -68,7 +68,7 @@ const Form = () => {
             })}
             id="name"
             type="text"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black font-medium"
+            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
             placeholder="Votre nom*"
           />
           {errors?.name && <p> {errors.name.message}</p>}
@@ -87,7 +87,7 @@ const Form = () => {
             })}
             id="cell"
             type="text"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black font-medium"
+            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
             placeholder="Numéro de téléphone*"
           />
           {errors?.cell && <p> {errors.cell.message}</p>}
@@ -107,7 +107,7 @@ const Form = () => {
             })}
             id="mail"
             type="text"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black font-medium"
+            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
             placeholder="Adresse courriel*"
           />
           {errors?.mail && <p> {errors.mail.message}</p>}
@@ -122,7 +122,7 @@ const Form = () => {
             })}
             id="service"
             type="text"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black font-medium"
+            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
             placeholder="Type de service"
           />
           {errors?.service && <p> {errors.service.message}</p>}
@@ -137,7 +137,7 @@ const Form = () => {
             })}
             id="msg"
             type="text"
-            className="w-full h-[200px] border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black font-medium"
+            className="w-full h-[130px] border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
             placeholder="Tapez un message..."
           />
           {errors?.msg && <p> {errors.msg.message}</p>}
@@ -152,7 +152,7 @@ const Form = () => {
             })}
             id="picture"
             type="text"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black font-medium"
+            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
             placeholder="Photo*"
           />
           {errors?.picture && <p> {errors.picture.message}</p>}
@@ -174,12 +174,12 @@ const Form = () => {
             })}
             id="size"
             type="number"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black font-medium"
+            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
             placeholder="Pieds carré*"
           />
           {errors?.size && <p> {errors.size.message}</p>}
         </div>
-        <div className="w-full flex text-xs mb-5">
+        <div className="w-full flex text-xs mb-5 text-left">
           Les infos fournis sont strictement confidentiel*
         </div>
         <div className="w-full">

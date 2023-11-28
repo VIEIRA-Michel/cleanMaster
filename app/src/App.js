@@ -2,6 +2,7 @@
 import Header from "./components/Header/Header";
 import "./App.css";
 import HeroSection from "./components/HeroSection/HeroSection";
+import About from "./components/About/About";
 
 function App() {
   console.log("render");
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <HeroSection />
+      <About />
     </div>
   );
 }

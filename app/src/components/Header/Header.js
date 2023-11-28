@@ -4,18 +4,18 @@ const Header = () => {
   const cellulaire = "(+123) 5462 3257";
   const mail = "gadeodesign@gmail.com";
   return (
-    <div className="w-screen h-[100px]">
+    <div className="w-screen h-[100px] bg-[white] relative z-10">
       <div className="w-full h-full flex">
-        <div className="header__space w-[5%] border-b border-[black] bg-red-500">
+        <div className="header__space w-[5%] border-b border-[black]">
           <div className="w–full h-[49%] border-b border-[black]"></div>
           <div></div>
         </div>
-        <div className="header__logo w-[10%] flex justify-center items-center border border-t-0 border-[black] bg-pink-500">
+        <div className="header__logo w-[10%] flex justify-center items-center border border-t-0 border-[black]">
           {/* logo */}LOGO
         </div>
         <div className="w-[85%]">
-          <div className="h-[30%] my-2 flex flex-row bg-indigo-500 ">
-            <div className="w-[40%] flex justify-center items-center bg-green-500 text-xs font-semibold border-r border-[black]">
+          <div className="h-[30%] my-2 flex flex-row ">
+            <div className="w-[40%] flex justify-center items-center text-xs font-semibold border-r border-[black]">
               Pour plus d'information : {cellulaire}
             </div>
             <div className="w-[60%] flex justify-center items-center text-xs font-semibold border-l border-[black]">
