@@ -2,7 +2,8 @@
 import Header from "./components/Header/Header";
 import "./App.css";
 import HeroSection from "./components/HeroSection/HeroSection";
-import About from "./components/About/About";
+import AboutSection from "./components/AboutSection/AboutSection";
+import ServiceSection from "./components/ServiceSection/ServiceSection";
 
 function App() {
   console.log("render");
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
       <Header />
       <HeroSection />
-      <About />
+      <AboutSection />
+      <ServiceSection />
     </div>
   );
 }
