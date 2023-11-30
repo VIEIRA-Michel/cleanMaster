@@ -4,6 +4,7 @@ import "./App.css";
 import HeroSection from "./components/HeroSection/HeroSection";
 import AboutSection from "./components/AboutSection/AboutSection";
 import ServiceSection from "./components/ServiceSection/ServiceSection";
+import ReviewSection from "./components/ReviewSection/ReviewSection";
 
 function App() {
   console.log("render");
@@ -13,6 +14,7 @@ function App() {
       <HeroSection />
       <AboutSection />
       <ServiceSection />
+      <ReviewSection />
     </div>
   );
 }
