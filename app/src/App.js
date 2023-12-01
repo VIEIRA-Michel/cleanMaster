@@ -5,6 +5,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import AboutSection from "./components/AboutSection/AboutSection";
 import ServiceSection from "./components/ServiceSection/ServiceSection";
 import ReviewSection from "./components/ReviewSection/ReviewSection";
+import SubmissionsSection from "./components/SubmissionsSection/SubmissionsSection";
 
 function App() {
   console.log("render");
@@ -15,6 +16,7 @@ function App() {
       <AboutSection />
       <ServiceSection />
       <ReviewSection />
+      <SubmissionsSection />
     </div>
   );
 }
