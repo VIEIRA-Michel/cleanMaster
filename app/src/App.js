@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection/AboutSection";
 import ServiceSection from "./components/ServiceSection/ServiceSection";
 import ReviewSection from "./components/ReviewSection/ReviewSection";
 import SubmissionsSection from "./components/SubmissionsSection/SubmissionsSection";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   console.log("render");
@@ -17,6 +18,7 @@ function App() {
       <ServiceSection />
       <ReviewSection />
       <SubmissionsSection />
+      <Footer />
     </div>
   );
 }
