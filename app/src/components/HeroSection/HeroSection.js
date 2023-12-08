@@ -12,7 +12,7 @@ const HeroSection = () => {
           className="w-full object-cover"
           alt="a woman cleaning a cushion"
         ></img>
-        <div className="w-[40%] absolute right-[50%] bottom-[50%]">
+        <div className="w-[40%] absolute max-lg:left-[30%] max-lg:top-[10%] lg:right-[50%] lg:top-[30%] lg:bottom-[50%]">
           <h2 className="text-[white] text-xl font-bold">
             Bienvenue chez Nom de l'entreprise
           </h2>
@@ -25,8 +25,8 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
+        <Form />
       </div>
-      <Form />
     </div>
   );
 };

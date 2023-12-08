@@ -3,8 +3,8 @@ import picture from "../../assets/image/img_about.webp";
 
 const About = () => {
   return (
-    <div className="w-screen h-[400px] bg-[white] relative flex flex-row mt-5 shadow-md shadow-[#A4A7B0]">
-      <div className="w-[50%] h-full flex justify-center items-center">
+    <div className="w-screen h-[400px] bg-[white] relative flex flex-row lg:mt-5 shadow-md shadow-[#A4A7B0]">
+      <div className="lg:w-[50%] hidden h-full lg:flex justify-center items-center">
         <img
           src={picture}
           className="w-[80%] h-[90%]"
@@ -12,7 +12,7 @@ const About = () => {
             a hand cleaning a drawer handle"
         ></img>
       </div>
-      <div className="w-[50%] flex flex-col justify-center items-center">
+      <div className="w-full lg:w-[50%] flex flex-col justify-center items-center">
         <div className="w-[90%] h-[90%]">
           <div className="text-left">
             <h2 className="text-xl font-bold">Qui nous sommes ?</h2>

@@ -4,7 +4,7 @@ const Header = () => {
   const cellulaire = "(+123) 5462 3257";
   const mail = "gadeodesign@gmail.com";
   return (
-    <div className="w-screen h-[100px] bg-[white] relative z-10">
+    <div className="w-screen h-[50px] lg:h-[100px] bg-[white] relative z-10">
       <div className="w-full h-full flex">
         <div className="header__space w-[5%] border-b border-[black]">
           <div className="w–full h-[49%] border-b border-[black]"></div>
@@ -14,17 +14,20 @@ const Header = () => {
           {/* logo */}LOGO
         </div>
         <div className="w-[85%]">
-          <div className="h-[30%] my-2 flex flex-row ">
+          <div className="h-[30%] my-2 hidden lg:flex flex-row ">
             <div className="w-[40%] flex justify-center items-center text-xs font-semibold border-r border-[black]">
               Pour plus d'information : {cellulaire}
             </div>
             <div className="w-[60%] flex justify-center items-center text-xs font-semibold border-l border-[black]">
               Envoyez-nous un courriel : {mail}
             </div>
+            <div className="h-[80%]">
+              <i class="fa-solid fa-bars"></i>
+            </div>
           </div>
           <div className="header__info__bottom h-[54%] border-y border-[black]">
             <nav className="h-full">
-              <ul className="h-full flex justify-evenly font-semibold">
+              <ul className="h-full hidden lg:flex justify-evenly font-semibold">
                 <li className="flex justify-center items-center text-xs">
                   Accueil
                 </li>
