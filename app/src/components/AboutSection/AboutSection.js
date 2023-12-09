@@ -3,7 +3,7 @@ import picture from "../../assets/image/img_about.webp";
 
 const About = () => {
   return (
-    <div className="w-screen h-[400px] bg-[white] relative flex flex-row lg:mt-5 shadow-md shadow-[#A4A7B0]">
+    <div className="w-screen h-screen lg:h-[400px] bg-[white] relative flex flex-row lg:mt-5 shadow-md shadow-[#A4A7B0]">
       <div className="lg:w-[50%] hidden h-full lg:flex justify-center items-center">
         <img
           src={picture}
@@ -12,8 +12,8 @@ const About = () => {
             a hand cleaning a drawer handle"
         ></img>
       </div>
-      <div className="w-full lg:w-[50%] flex flex-col justify-center items-center">
-        <div className="w-[90%] h-[90%]">
+      <div className="w-full lg:w-[50%] flex flex-col justify-center items-center py-6">
+        <div className="w-[90%] max-lg:h-full max-lg:flex max-lg:flex-col max-lg:justify-evenly">
           <div className="text-left">
             <h2 className="text-xl font-bold">Qui nous sommes ?</h2>
             <h3 className="text-lg">
@@ -21,7 +21,7 @@ const About = () => {
             </h3>
           </div>
           <div>
-            <p className="text-xs text-left mt-5">
+            <p className="text-left text-base mt-5">
               Chez Nom de l'entreprise, où un espace propre équivaut à un espace
               heureux. Forts de plus de 20 ans d'expérience, nous offrons des
               services de nettoyage résidentiel et commercial de qualité.
@@ -31,19 +31,19 @@ const About = () => {
           <div>
             <div className="ml-5 mt-5">
               <div className="mb-5">
-                <p className="text-xs text-left">
+                <p className="text-left text-sm">
                   Professionnels Dédiés : Notre équipe engagée assure un
                   nettouyage de premier ordre pour chaque espace.
                 </p>
               </div>
               <div className="mb-5">
-                <p className="text-xs text-left">
+                <p className="text-left text-sm">
                   Plus de 20 ans d'expérience : Des décennies d'expertise dans
                   la fourniture de services de nettoyage impeccables.
                 </p>
               </div>
               <div className="mb-5">
-                <p className="text-xs text-left">
+                <p className="text-left text-sm">
                   Résidentiel & Commercial : Des solutions complètes pour les
                   maisons et les entreprise, adaptées à vos besoins.
                 </p>

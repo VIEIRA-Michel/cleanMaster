@@ -2,10 +2,10 @@ import React from "react";
 
 const ServiceSection = () => {
   return (
-    <div className="w-screen lg:h-[400px] flex justify-center items-center bg-[#D8DCE7] py-6">
+    <div className="w-screen h-screen lg:h-[400px] flex justify-center items-center bg-[#D8DCE7] py-6">
       <div className="h-full bg-[#D8DCE7] flex flex-col justify-center items-center m-auto">
         <div className="w-[100%] h-[100%] flex justify-evenly flex-col">
-          <div className="w-[70%] h-[30%] mx-auto flex justify-center items-center flex-col">
+          <div className="w-[90%] lg:w-[70%] h-[30%] mx-auto flex justify-evenly lg:justify-center items-center flex-col">
             <div>
               <h2 className="text-lg lg:text-xl font-bold">
                 Nous offrons les meilleurs services de nettoyage à votre service
@@ -13,7 +13,7 @@ const ServiceSection = () => {
               </h2>
             </div>
             <div className="">
-              <h3 className="text-sm hidden lg:block">
+              <h3 className="text-sm block">
                 Nom de l'entreprise, initialement une entreprise de nettoyage
                 basée au Canada, offrant des solutions de nettoyage de haut
                 niveau dans la ville de montréal
@@ -22,7 +22,7 @@ const ServiceSection = () => {
           </div>
           <div className="w-full flex flex-col lg:flex-row justify-evenly items-center">
             <div className="flex items-center justify-evenly flex-col lg:flex-row my-2">
-              <div className="w-[60%] lg:w-[200px] lg:h-[200px]  bg-[white] p-2  shadow-lg rounded-[10px] ">
+              <div className="w-[80%] lg:w-[200px] lg:h-[200px]  bg-[white] p-2  shadow-lg rounded-[10px] ">
                 <div className="w-full h-full flex flex-row lg:flex-col">
                   <div className="w-[100px] h-[40%] m-auto flex justify-center items-center">
                     <span className="flex justify-center items-center text-xs w-[50%] h-[50%]">
@@ -42,7 +42,7 @@ const ServiceSection = () => {
               </div>
             </div>
             <div className="flex items-center justify-evenly flex-col lg:flex-row my-2">
-              <div className="w-[60%] lg:w-[200px] lg:h-[200px]  bg-[white] p-2  shadow-lg rounded-[10px] ">
+              <div className="w-[80%] lg:w-[200px] lg:h-[200px]  bg-[white] p-2  shadow-lg rounded-[10px] ">
                 <div className="w-full h-full flex flex-row lg:flex-col">
                   <div className="w-[100px] h-[40%] m-auto flex justify-center items-center">
                     <span className="flex justify-center items-center text-xs w-[50%] h-[50%]">
@@ -62,7 +62,7 @@ const ServiceSection = () => {
               </div>
             </div>
             <div className="flex items-center justify-evenly flex-col lg:flex-row my-2">
-              <div className="w-[60%] lg:w-[200px] lg:h-[200px]  bg-[white] p-2  shadow-lg rounded-[10px] ">
+              <div className="w-[80%] lg:w-[200px] lg:h-[200px]  bg-[white] p-2  shadow-lg rounded-[10px] ">
                 <div className="w-full h-full flex flex-row lg:flex-col">
                   <div className="w-[100px] h-[40%] m-auto flex justify-center items-center">
                     <span className="flex justify-center items-center text-xs w-[50%] h-[50%]">

@@ -4,7 +4,7 @@ const Header = () => {
   const cellulaire = "(+123) 5462 3257";
   const mail = "gadeodesign@gmail.com";
   return (
-    <div className="w-screen h-[50px] lg:h-[100px] bg-[white] relative z-10">
+    <div className="w-screen h-[5vh] lg:h-[100px] bg-[white] relative z-10">
       <div className="w-full h-full flex">
         <div className="header__space w-[5%] border-b border-[black]">
           <div className="w–full h-[49%] border-b border-[black]"></div>

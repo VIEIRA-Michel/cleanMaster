@@ -2,7 +2,7 @@ import React from "react";
 
 const ReviewSection = () => {
   return (
-    <div className="w-screen h-[300px] shadow-md shadow-[#A4A7B0] border-[black] border-b">
+    <div className="w-screen h-screen lg:h-[300px] shadow-md shadow-[#A4A7B0] border-[black] border-b">
       <div className="w-[90%] h-full bg-[white] mx-auto flex flex-row justify-between items-center relative">
         <div className="flex justify-center items-center">
           <i class="fa-solid fa-chevron-left"></i>
