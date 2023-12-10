@@ -46,7 +46,7 @@ const Form = () => {
   }
 
   return (
-    <div className="w-[30%] hidden lg:block bg-[white] border border-[black] rounded-[10px] absolute top-[-10px] right-[30px]">
+    <>
       <form
         onSubmit={handleSubmit(submit)}
         className="w-[80%] flex flex-col justify-center items-center m-auto mt-14 mb-5"
@@ -188,7 +188,7 @@ const Form = () => {
           </button>
         </div>
       </form>
-    </div>
+    </>
   );
 };
 

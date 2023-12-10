@@ -3,7 +3,7 @@ import picture from "../../assets/image/img_submissions.webp";
 
 const SubmissionsSection = () => {
   return (
-    <div className="w-screen h-screen lg:h-[400px] flex flex-row">
+    <div className="w-screen h-screen lg:h-[450px] flex flex-row relative shadow-md shadow-[#A4A7B0]">
       <div className="w-full lg:w-[50%] h-full relative">
         <img src={picture} className="w-full h-full object-cover" alt=""></img>
         <div className="w-full block lg:hidden absolute bg-custom absolute z-10 top-[0px] text-white p-2">
@@ -34,7 +34,7 @@ const SubmissionsSection = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-[50%] lg:h-full hidden lg:block bg-custom absolute">
+      <div className="lg:w-[50%] lg:h-full hidden lg:block bg-custom absolute lg:right-[0px] lg:bg-[#D8DCE7]">
         <div className="w-[80%] h-full flex flex-col justify-evenly items-center m-auto">
           <div className="h-[30%] flex flex-col justify-end">
             <h3 className="text-xl font-bold text-left">

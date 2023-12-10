@@ -24,7 +24,9 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-      <Form />
+      <div className="w-[30%] hidden lg:block bg-[white] border border-[black] rounded-[10px] absolute top-[-10px] right-[30px]">
+        <Form />
+      </div>
     </div>
   );
 };

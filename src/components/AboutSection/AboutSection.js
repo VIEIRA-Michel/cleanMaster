@@ -3,7 +3,7 @@ import picture from "../../assets/image/img_about.webp";
 
 const About = () => {
   return (
-    <div className="w-screen h-screen lg:h-[400px] bg-[white] relative flex flex-row lg:mt-5 shadow-md shadow-[#A4A7B0]">
+    <div className="w-screen h-screen lg:h-[450px] bg-[white] relative flex flex-row lg:mt-5 shadow-md shadow-[#A4A7B0]">
       <div className="lg:w-[50%] hidden h-full lg:flex justify-center items-center">
         <img
           src={picture}
@@ -49,11 +49,11 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="flex justify-start items-center">
-              <button className="rounded-[20px] py-2 px-4 shadow-[0_20px_60px_-12px_rgba(0,0,0,1)] text-sm font-bold">
-                Plus d'informations
-              </button>
-            </div>
+          </div>
+          <div className="flex justify-start items-center">
+            <button className="rounded-[20px] py-2 px-4 shadow-[0_20px_60px_-12px_rgba(0,0,0,1)] text-sm font-bold">
+              Plus d'informations
+            </button>
           </div>
         </div>
       </div>

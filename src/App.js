@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection/AboutSection";
 import ServiceSection from "./components/ServiceSection/ServiceSection";
 import ReviewSection from "./components/ReviewSection/ReviewSection";
 import SubmissionsSection from "./components/SubmissionsSection/SubmissionsSection";
+import FormSection from "./components/FormSection/FormSection";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <ServiceSection />
       <ReviewSection />
       <SubmissionsSection />
+      <FormSection />
       <Footer />
     </div>
   );
