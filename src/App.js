@@ -10,7 +10,6 @@ import FormSection from "./components/FormSection/FormSection";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  console.log("render");
   return (
     <div className="App">
       <Header />

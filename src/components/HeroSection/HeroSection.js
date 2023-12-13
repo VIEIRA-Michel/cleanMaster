@@ -4,8 +4,20 @@ import picture from "../../assets/image/img_header.webp";
 
 const HeroSection = () => {
   console.log(picture);
+  function handleClick(e, id) {
+    let target = document.getElementById(id);
+    e.preventDefault();
+    target &&
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+  }
   return (
-    <div className="w-screen h-[95vh] lg:h-screen lg:h-[400px] relative">
+    <section
+      className="w-screen h-[95vh] lg:h-screen lg:h-[400px] relative"
+      id="hero"
+    >
       <img
         src={picture}
         className="w-full h-full object-cover"
@@ -19,7 +31,10 @@ const HeroSection = () => {
           Votre partenaire de confiance pour un nettoyage efficace
         </h3>
         <div className="mt-5">
-          <button className="bg-[white] rounded-[20px] py-2 px-4 shadow-[0_20px_60px_-12px_rgba(0,0,0,1)] text-sm font-bold">
+          <button
+            onClick={(e) => handleClick(e, "contact")}
+            className="bg-[white] rounded-[20px] py-2 px-4 shadow-[0_20px_60px_-12px_rgba(0,0,0,1)] text-sm font-bold"
+          >
             Plus d'informations
           </button>
         </div>
@@ -27,7 +42,7 @@ const HeroSection = () => {
       <div className="w-[30%] hidden lg:block bg-[white] border border-[black] rounded-[10px] absolute top-[-10px] right-[30px]">
         <Form />
       </div>
-    </div>
+    </section>
   );
 };
 

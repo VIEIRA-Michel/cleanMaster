@@ -2,7 +2,10 @@ import React from "react";
 
 const ServiceSection = () => {
   return (
-    <div className="w-screen h-screen lg:h-[450px] flex justify-center items-center bg-[#D8DCE7] py-6">
+    <section
+      className="w-screen h-screen lg:h-[450px] flex justify-center items-center bg-[#D8DCE7] py-6"
+      id="services"
+    >
       <div className="h-full bg-[#D8DCE7] flex flex-col justify-center items-center m-auto">
         <div className="w-[100%] h-[100%] flex justify-evenly flex-col">
           <div className="w-[90%] lg:w-[70%] h-[30%] mx-auto flex justify-evenly lg:justify-center items-center flex-col">
@@ -26,7 +29,7 @@ const ServiceSection = () => {
                 <div className="w-full h-full flex flex-row lg:flex-col">
                   <div className="w-[100px] h-[40%] m-auto flex justify-center items-center">
                     <span className="flex justify-center items-center text-xs w-[50%] h-[50%]">
-                      <i class="fa-duotone fa-vacuum text-xl lg:text-3xl p-2"></i>
+                      <i className="fa-duotone fa-vacuum text-xl lg:text-3xl p-2"></i>
                     </span>
                   </div>
                   <div className="w-[80%] h-[60%] flex flex-col justify-evenly items-center m-auto">
@@ -46,7 +49,7 @@ const ServiceSection = () => {
                 <div className="w-full h-full flex flex-row lg:flex-col">
                   <div className="w-[100px] h-[40%] m-auto flex justify-center items-center">
                     <span className="flex justify-center items-center text-xs w-[50%] h-[50%]">
-                      <i class="fa-duotone fa-vacuum text-xl lg:text-3xl p-2"></i>
+                      <i className="fa-duotone fa-vacuum text-xl lg:text-3xl p-2"></i>
                     </span>
                   </div>
                   <div className="w-[80%] h-[60%] flex flex-col justify-evenly items-center m-auto">
@@ -66,7 +69,7 @@ const ServiceSection = () => {
                 <div className="w-full h-full flex flex-row lg:flex-col">
                   <div className="w-[100px] h-[40%] m-auto flex justify-center items-center">
                     <span className="flex justify-center items-center text-xs w-[50%] h-[50%]">
-                      <i class="fa-duotone fa-vacuum text-xl lg:text-3xl p-2"></i>
+                      <i className="fa-duotone fa-vacuum text-xl lg:text-3xl p-2"></i>
                     </span>
                   </div>
                   <div className="w-[80%] h-[60%] flex flex-col justify-evenly items-center m-auto">
@@ -84,7 +87,7 @@ const ServiceSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

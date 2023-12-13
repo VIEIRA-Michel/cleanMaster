@@ -3,7 +3,10 @@ import picture from "../../assets/image/img_about.webp";
 
 const About = () => {
   return (
-    <div className="w-screen h-screen lg:h-[450px] bg-[white] relative flex flex-row lg:mt-5 shadow-md shadow-[#A4A7B0]">
+    <section
+      className="w-screen h-screen lg:h-[450px] bg-[white] relative flex flex-row lg:mt-5 shadow-md shadow-[#A4A7B0]"
+      id="about"
+    >
       <div className="lg:w-[50%] hidden h-full lg:flex justify-center items-center">
         <img
           src={picture}
@@ -57,7 +60,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

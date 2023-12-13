@@ -1,9 +1,9 @@
 import React from "react";
 import picture from "../../assets/image/img_submissions.webp";
 
-const SubmissionsSection = () => {
+const SubmissionsSection = (props, ref) => {
   return (
-    <div className="w-screen h-screen lg:h-[450px] flex flex-row relative shadow-md shadow-[#A4A7B0]">
+    <section className="w-screen h-screen lg:h-[450px] flex flex-row relative shadow-md shadow-[#A4A7B0]" id="submission">
       <div className="w-full lg:w-[50%] h-full relative">
         <img src={picture} className="w-full h-full object-cover" alt=""></img>
         <div className="w-full block lg:hidden absolute bg-custom absolute z-10 top-[0px] text-white p-2">
@@ -63,7 +63,7 @@ const SubmissionsSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
