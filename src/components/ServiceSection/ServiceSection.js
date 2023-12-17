@@ -2,20 +2,20 @@ import React from "react";
 
 const ServiceSection = () => {
   return (
-    <section
-      className="w-screen h-screen lg:h-[450px] flex justify-center items-center bg-[#D8DCE7] py-6"
+    <div
+      className="w-full h-screen lg:h-[450px] flex justify-center items-center bg-gradient-to-b from-[#2C2E82] to-[#574686] py-6"
       id="services"
     >
-      <div className="h-full bg-[#D8DCE7] flex flex-col justify-center items-center m-auto">
+      <div className="h-full bg-gradient-to-b from-[#2C2E82] to-[#574686] flex flex-col justify-center items-center m-auto">
         <div className="w-[100%] h-[100%] flex justify-evenly flex-col">
-          <div className="w-[90%] lg:w-[70%] h-[30%] mx-auto flex justify-evenly lg:justify-center items-center flex-col">
+          <div className="w-[90%] lg:w-[70%] h-[30%] mx-auto flex justify-evenly lg:justify-center items-center flex-col text-[white]">
             <div>
               <h2 className="text-lg lg:text-xl font-bold">
                 Nous offrons les meilleurs services de nettoyage à votre service
                 !
               </h2>
             </div>
-            <div className="">
+            <div>
               <h3 className="text-sm block">
                 Nom de l'entreprise, initialement une entreprise de nettoyage
                 basée au Canada, offrant des solutions de nettoyage de haut
@@ -87,7 +87,7 @@ const ServiceSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

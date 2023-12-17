@@ -4,7 +4,7 @@ import picture from "../../assets/image/img_about.webp";
 const About = () => {
   return (
     <section
-      className="w-screen h-screen lg:h-[450px] bg-[white] relative flex flex-row lg:mt-5 shadow-md shadow-[#A4A7B0]"
+      className="w-full h-screen lg:h-[450px] bg-[white] relative flex flex-row lg:mt-5"
       id="about"
     >
       <div className="lg:w-[50%] hidden h-full lg:flex justify-center items-center">
@@ -18,7 +18,9 @@ const About = () => {
       <div className="w-full lg:w-[50%] flex flex-col justify-center items-center py-6">
         <div className="w-[90%] max-lg:h-full max-lg:flex max-lg:flex-col max-lg:justify-evenly">
           <div className="text-left">
-            <h2 className="text-xl font-bold">Qui nous sommes ?</h2>
+            <h2 className="text-xl font-bold text-secondary">
+              Qui nous sommes ?
+            </h2>
             <h3 className="text-lg">
               Le coeur et l'âme de Nom de l'entreprise
             </h3>
@@ -54,7 +56,7 @@ const About = () => {
             </div>
           </div>
           <div className="flex justify-start items-center">
-            <button className="rounded-[20px] py-2 px-4 shadow-[0_20px_60px_-12px_rgba(0,0,0,1)] text-sm font-bold">
+            <button className="hidden lg:block bg-[#6D6E72] rounded-[20px] py-2 px-4 shadow-[0_20px_60px_-12px_rgba(0,0,0,1)] text-sm font-bold">
               Plus d'informations
             </button>
           </div>
