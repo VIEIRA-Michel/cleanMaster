@@ -56,7 +56,7 @@ const About = () => {
             </div>
           </div>
           <div className="flex justify-start items-center">
-            <button className="hidden lg:block bg-[#6D6E72] rounded-[20px] py-2 px-4 shadow-[0_20px_60px_-12px_rgba(0,0,0,1)] text-sm font-bold">
+            <button className="hidden lg:block bg-[#6D6E72] rounded-[20px] py-2 px-4 shadow-[0_20px_60px_-12px_rgba(0,0,0,1)] text-sm font-bold text-[white]">
               Plus d'informations
             </button>
           </div>

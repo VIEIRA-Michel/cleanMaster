@@ -23,7 +23,7 @@ const HeroSection = () => {
         className="w-full h-full object-cover"
         alt="a woman cleaning a cushion"
       ></img>
-      <div className="w-[80%] lg:w-[40%] max-lg:h-[50%] absolute max-lg:flex max-lg:justify-evenly max-lg:items-center max-lg:flex-col max-lg:left-[10%] max-lg:top-[10%] lg:right-[50%] lg:top-[30%] lg:bottom-[50%]">
+      <div className="w-[80%] lg:w-[40%] max-lg:h-[50%] absolute flex justify-center max-lg:justify-evenly items-center flex-col max-lg:left-[10%] max-lg:top-[10%] lg:right-[50%] lg:top-[30%] lg:bottom-[50%]">
         <h2 className="w-[71%] lg:w-[65%] text-[white] text-2xl font-bold">
           Bienvenue chez Nom de l'entreprise
         </h2>

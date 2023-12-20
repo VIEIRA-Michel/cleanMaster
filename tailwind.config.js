@@ -3,16 +3,6 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      keyframes: {
-        burgerMenu: {
-          "0%": { opacity: "0" },
-          "50%": { opacity: "0.5" },
-          "100%": { opacity: "1" },
-        },
-      },
-      animation: {
-        burgerMenu: "burgerMenu , 1s ease-in-out alternate",
-      },
       backgroundColor: {
         primary: "#574686",
         secondary: "#2C2E82",
