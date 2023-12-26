@@ -23,9 +23,57 @@ function App() {
     setScrollDisable(!scrollDisable);
   }
 
+  function scrollFunction(destination) {
+    const heroSection = document.getElementById("hero").clientHeight,
+      aboutSection = document.getElementById("about").clientHeight,
+      serviceSection = document.getElementById("services").clientHeight,
+      reviewSection = document.getElementById("review").clientHeight,
+      submissionSection = document.getElementById("submission").clientHeight;
+    if (destination === "hero") {
+      console.log(destination);
+      window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+    } else if (destination === "about") {
+      console.log(destination);
+      window.scrollTo({ left: 0, top: heroSection - 50, behavior: "smooth" });
+    } else if (destination === "services") {
+      console.log(destination);
+      window.scrollTo({
+        left: 0,
+        top: heroSection + aboutSection - 50,
+        behavior: "smooth",
+      });
+    } else if (destination === "review") {
+      console.log(destination);
+      window.scrollTo({
+        left: 0,
+        top: heroSection + aboutSection + serviceSection - 50,
+        behavior: "smooth",
+      });
+    } else if (destination === "submission") {
+      console.log(destination);
+      window.scrollTo({
+        left: 0,
+        top: heroSection + aboutSection + serviceSection + reviewSection - 50,
+        behavior: "smooth",
+      });
+    } else {
+      console.log(destination);
+      window.scrollTo({
+        left: 0,
+        top:
+          heroSection +
+          aboutSection +
+          serviceSection +
+          reviewSection +
+          submissionSection,
+        behavior: "smooth",
+      });
+    }
+  }
+
   return (
-    <div className={`App w-screen ${scrollDisable ? "overflow-y-hidden" : ""}`}>
-      <Header fDisableScroll={disableScroll} />
+    <div className={`App ${scrollDisable ? "overflow-y-hidden" : ""}`}>
+      <Header fDisableScroll={disableScroll} fScroll={scrollFunction} />
       <HeroSection />
       <AboutSection />
       <ServiceSection />

@@ -1,0 +1,26 @@
+@import '../../assets/styles/keyframes';
+
+.fa-bar .fa-xmark {
+    &.enable {
+        -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    &.disable {
+        -webkit-animation: scale-out-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: scale-out-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    @for $i from 1 through 10 {
+        $iteration-amount: 100ms * $i;
+    
+        .menu-#{$i} {
+            animation: fade-in-bottom 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 100ms + $iteration-amount;
+        }
+    }
+}

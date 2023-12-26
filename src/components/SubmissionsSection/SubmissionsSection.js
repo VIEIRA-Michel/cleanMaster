@@ -8,21 +8,25 @@ const SubmissionsSection = () => {
       id="submission"
     >
       <div className="w-full max-lg:flex max-lg:justify-center max-lg:items-center max-lg:bg-secondary max-lg:h-[50%] lg:h-full lg:w-[50%] relative">
-        <img src={picture} className="w-[90%] lg:w-full h-full max-lg:rounded-[15px] max-lg:shadow-custom object-cover" alt=""></img>
+        <img
+          src={picture}
+          className="w-[90%] lg:w-full h-full max-lg:rounded-[15px] max-lg:shadow-custom object-cover"
+          alt=""
+        ></img>
       </div>
       <div className="lg:w-[50%] max-lg:h-[50%] lg:h-full lg:block bg-gradient-to-b from-[#574686] to-[#2C2E82] text-[white]">
         <div className="w-[80%] h-full flex flex-col justify-evenly items-center m-auto">
           <div className="h-[30%] flex flex-col justify-end">
-            <h3 className="text-xl font-bold text-left">
+            <h3 className="text-xl font-normal text-left">
               Caractéristique impressionnante
             </h3>
-            <p className="text-left">
+            <p className="text-left font-light">
               Chez Nom de l'entreprise, nous servons une large gamme de clients
               avec dévouement et expertise
             </p>
           </div>
           <div className="w-full h-[50%] flex justify-evenly items-center">
-            <ul className="h-full flex flex-col justify-evenly items-start list-disc text-xs text-left">
+            <ul className="h-full flex flex-col justify-evenly items-start list-disc text-sm font-light text-left pl-[15px]">
               <li>
                 Diversité des Clients : Services adaptés pour entreprises,
                 grande corporations et résidences privées.

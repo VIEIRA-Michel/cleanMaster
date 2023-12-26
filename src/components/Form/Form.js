@@ -1,54 +1,18 @@
 import React from "react";
-import { useForm } from "react-hook-form";
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm, ValidationError } from "@formspree/react";
+import * as LR from "@uploadcare/blocks";
 
 const Form = () => {
-  const yupSchema = yup.object({
-    name: yup
-      .string()
-      .required("Le champ est obligatoire")
-      .min(2, "Trop court !"),
-    cell: yup
-      .number()
-      .required("Le champ est obligatoire")
-      .min(1000000000)
-      .max(9999999999),
-    mail: yup
-      .string()
-      .required("Le champ est obligatoire")
-      .email("L'adresse mail n'est pas valide"),
-    service: yup.string().required(),
-  });
-
-  const {
-    register,
-    handleSubmit,
-    getValues,
-    watch,
-    formState: { errors },
-  } = useForm({
-    defaultValues: {
-      name: "",
-      cell: "",
-      mail: "",
-      service: "",
-      message: "",
-      picture: "",
-      size: "",
-    },
-    resolver: yupResolver(yupSchema),
-    mode: "onSubmit",
-  });
-
-  function submit(values) {
-    console.log(values);
+  LR.registerBlocks(LR);
+  const [state, handleSubmit] = useForm("mnqealqk");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
   }
 
   return (
     <>
       <form
-        onSubmit={handleSubmit(submit)}
+        onSubmit={handleSubmit}
         className="w-[80%] flex flex-col justify-center items-center m-auto mt-14 mb-5"
       >
         <div className="w-full flex mb-5">
@@ -56,134 +20,80 @@ const Form = () => {
         </div>
         <div className="w-full flex flex-column mb-3">
           <input
-            {...register("name", {
-              required: {
-                value: true,
-                message: "Le champ est obligatoire",
-              },
-              minLength: {
-                value: 3,
-                message: "Trop court !",
-              },
-            })}
             id="name"
+            name="name"
             type="text"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
+            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium rounded-[5px]"
             placeholder="Votre nom*"
           />
-          {errors?.name && <p> {errors.name.message}</p>}
         </div>
         <div className="w-full flex flex-column mb-3">
           <input
-            {...register("cell", {
-              required: {
-                value: true,
-                message: "Le champ est obligatoire",
-              },
-              minLength: {
-                value: 10,
-                message: "Le numéro n'est pas valide",
-              },
-            })}
             id="cell"
+            name="cell"
             type="text"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
+            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium rounded-[5px]"
             placeholder="Numéro de téléphone*"
           />
-          {errors?.cell && <p> {errors.cell.message}</p>}
         </div>
         <div className="w-full flex flex-column mb-3">
           <input
-            {...register("mail", {
-              required: {
-                value: true,
-                message: "Le champ est obligatoire",
-              },
-              pattern: {
-                value:
-                  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-                message: "L'adresse mail n'est pas valide",
-              },
-            })}
-            id="mail"
+            id="email"
+            name="email"
             type="text"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
+            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium rounded-[5px]"
             placeholder="Adresse courriel*"
           />
-          {errors?.mail && <p> {errors.mail.message}</p>}
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
         <div className="w-full flex flex-column mb-3">
           <input
-            {...register("service", {
-              required: {
-                value: true,
-                message: "Le champ est obligatoire",
-              },
-            })}
             id="service"
+            name="service"
             type="text"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
+            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium rounded-[5px]"
             placeholder="Type de service"
           />
-          {errors?.service && <p> {errors.service.message}</p>}
         </div>
         <div className="w-full flex flex-column mb-3">
-          <input
-            {...register("msg", {
-              required: {
-                value: true,
-                message: "Le champ est obligatoire",
-              },
-            })}
-            id="msg"
+          <textarea
+            id="message"
+            name="message"
             type="text"
-            className="w-full h-[130px] border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
+            className="w-full h-[130px] border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium rounded-[5px]"
             placeholder="Tapez un message..."
           />
-          {errors?.msg && <p> {errors.msg.message}</p>}
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
         </div>
         <div className="w-full flex flex-column mb-3">
-          <input
-            {...register("picture", {
-              required: {
-                value: true,
-                message: "Le champ est obligatoire",
-              },
-            })}
-            id="picture"
-            type="text"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
-            placeholder="Photo*"
+          <lr-config ctx-name="my-uploader" pubkey="" />
+          <lr-file-uploader-regular
+            css-src="https://cdn.jsdelivr.net/npm/@uploadcare/blocks@0.30.0/web/lr-file-uploader-regular.min.css"
+            ctx-name="my-uploader"
           />
-          {errors?.picture && <p> {errors.picture.message}</p>}
         </div>
         <div className="w-full flex flex-column">
           <input
-            {...register("size", {
-              required: {
-                value: true,
-                message: "Le champ est obligatoire",
-              },
-              valueAsNumber: true,
-              onBlur(e) {
-                console.log("blur size");
-              },
-              onChange(e) {
-                console.log("onChange");
-              },
-            })}
             id="size"
+            name="size"
             type="number"
-            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium"
+            className="w-full border border-[black] py-2 px-4 bg-[#D8DCE7] placeholder-black text-xs font-medium rounded-[5px]"
             placeholder="Pieds carré*"
           />
-          {errors?.size && <p> {errors.size.message}</p>}
         </div>
         <div className="w-full flex text-xs mb-5 text-left">
           Les infos fournis sont strictement confidentiel*
         </div>
         <div className="w-full">
-          <button className="w-full py-2 px-4 border rounded-[5px]">
+          <button
+            type="submit"
+            className="w-full py-2 px-4 border rounded-[5px] hover:bg-secondary hover:text-[white] duration-300"
+            disabled={state.submitting}
+          >
             Soumettre
           </button>
         </div>
